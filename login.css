@@ -1,0 +1,156 @@
+/* Universal Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Form Container Card */
+.login-container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Text Styles */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-header h2 {
+    color: #1a1a1a;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.login-header p {
+    color: #666666;
+    font-size: 14px;
+}
+
+/* Layout for Inputs */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.label-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input Fields Appearance */
+.input-group input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dde2e5;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #1a1a1a;
+    transition: all 0.2s ease-in-out;
+    background-color: #fcfdfe;
+}
+
+/* Smooth Focus Rings */
+.input-group input:focus {
+    outline: none;
+    border-color: #02830d; /* Accent color matching your eco/green vibe */
+    box-shadow: 0 0 0 4px rgba(2, 131, 13, 0.15);
+    background-color: #ffffff;
+}
+
+/* Helper Text Links */
+.forgot-link, 
+.signup-redirect a {
+    color: #02830d;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.forgot-link:hover, 
+.signup-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Remember Me Checkbox Options */
+.form-options {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #555555;
+    user-select: none;
+}
+
+.remember-me input {
+    accent-color: #02830d; /* Styles the checkbox natively */
+    width: 16px;
+    height: 16px;
+}
+
+/* Primary Button Styling */
+.login-btn {
+    width: 100%;
+    background-color: #02830d;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    background-color: #1ab441;
+}
+
+.login-btn:active {
+    transform: scale(0.98);
+}
+
+/* Bottom Switch Text */
+.signup-redirect {
+    text-align: center;
+    font-size: 14px;
+    color: #666666;
+    margin-top: 15px;
+}

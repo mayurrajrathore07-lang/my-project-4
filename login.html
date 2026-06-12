@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Welcome Back</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        <div class="login-header">
+            <h2>Welcome Back</h2>
+            <p>Please enter your details to sign in.</p>
+        </div>
+
+        <form class="login-form" action="#" method="POST">
+            
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="name@gmail.com" required>
+            </div>
+
+            <div class="input-group">
+                <div class="label-wrapper">
+                    <label for="password">Password</label>
+                    <a href="#" class="forgot-link">Forgot password?</a>
+                </div>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox">
+                    <span>Remember me for 30 days</span>
+                </label>
+            </div>
+
+            <button type="submit" class="login-btn">Sign In</button>
+
+            <p class="signup-redirect">Don't have an account? <a href="#">Sign up for free</a></p>
+        </form>
+    </div>
+
+</body>
+</html>
